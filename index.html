@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Responsive landing page with semantic HTML, Flexbox layout, smooth scrolling, and modern animations." />
+  <title>Landing Page | Codeveda</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Codeveda</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content container">
+        <div class="hero-copy">
+          <p class="eyebrow">Launch your idea</p>
+          <h1>Build better experiences with responsive design.</h1>
+          <p>Modern landing page templates and powerful layouts that adapt smoothly to mobile, tablet, and desktop screens.</p>
+          <div class="hero-actions">
+            <a href="#features" class="btn primary">Explore Features</a>
+            <a href="#contact" class="btn secondary">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card animate-float">
+            <h2>Fast, responsive, accessible</h2>
+            <p>Designed with semantic HTML, CSS Grid, and a mobile-first mindset.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Core benefits</p>
+          <h2>Everything your landing page needs</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card animate-up">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast Performance</h3>
+            <p>Optimized layout and smooth animations help keep visitors engaged.</p>
+          </article>
+          <article class="feature-card animate-up delay-1">
+            <div class="feature-icon">📱</div>
+            <h3>Mobile First</h3>
+            <p>Built to scale from the smallest screens to widescreen desktop views.</p>
+          </article>
+          <article class="feature-card animate-up delay-2">
+            <div class="feature-icon">🌐</div>
+            <h3>Semantic HTML</h3>
+            <p>Accessibility-friendly structure with improved SEO and readability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-text animate-left">
+          <p class="eyebrow">Why choose us</p>
+          <h2>Responsive by design, simple by choice.</h2>
+          <p>This landing page uses modern CSS techniques and thoughtful structure to ensure your message arrives clearly on every screen. Use it as a foundation for your next digital product launch.</p>
+          <ul>
+            <li>Clean semantic sections</li>
+            <li>Flexible Flexbox and Grid layout</li>
+            <li>Smooth scroll behavior and subtle motion</li>
+          </ul>
+        </div>
+        <div class="about-card animate-right">
+          <div class="card-content">
+            <h3>Ready for any device</h3>
+            <p>From portrait phones to large desktop monitors, the layout adjusts gracefully and keeps the user experience consistent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interactive-demo" aria-labelledby="interactive-heading">
+      <div class="container interactive-grid">
+        <div class="panel form-panel">
+          <div class="section-header">
+            <p class="eyebrow">Interactive demo</p>
+            <h2 id="interactive-heading">Create an account</h2>
+          </div>
+          <form id="signup-form" novalidate>
+            <div class="field-group">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Eman Muhabati" />
+              <p class="error" id="name-error" aria-live="polite"></p>
+            </div>
+            <div class="field-group">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" placeholder="eman@example.com" />
+              <p class="error" id="email-error" aria-live="polite"></p>
+            </div>
+            <div class="field-group">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" placeholder="+93-798-509-320" />
+              <p class="error" id="phone-error" aria-live="polite"></p>
+            </div>
+            <div class="field-group">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" placeholder="Enter a strong password" />
+              <p class="hint">Use at least 8 characters with uppercase, lowercase, a number, and a symbol.</p>
+              <p class="error" id="password-error" aria-live="polite"></p>
+            </div>
+            <button type="submit" class="btn primary">Create Account</button>
+            <p id="form-success" class="form-success" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="panel counter-panel">
+          <div class="section-header">
+            <p class="eyebrow">DOM demo</p>
+            <h2>Simple counter</h2>
+          </div>
+          <div class="counter-display" id="counter-display">0</div>
+          <div class="counter-actions">
+            <button type="button" class="btn secondary" id="decrement-btn">Decrease</button>
+            <button type="button" class="btn primary" id="increment-btn">Increase</button>
+            <button type="button" class="btn secondary" id="reset-btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3>Stay connected</h3>
+        <p>Sign up for updates and start building your responsive presence today.</p>
+      </div>
+      <form class="signup-form" action="#" method="post">
+        <label for="email" class="sr-only">Email address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn primary">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Codeveda. Crafted for responsive digital launches.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
