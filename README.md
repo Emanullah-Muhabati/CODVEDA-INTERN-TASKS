@@ -27,7 +27,7 @@ This repository contains a minimal static website used for learning and small de
 
 ## 🌍 Live Demo
   
-👉 [Live Demo Link](https://your-demo-link.com)
+👉 [Live Demo Link](https://emanullah-muhabati.github.io/CODVEDA-INTERN-TASKS/)
 
 ## Usage
 
